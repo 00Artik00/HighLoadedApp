@@ -11,7 +11,7 @@ export interface PeaceOfNews {
 }
 
 export function News(props: NewsProps) {
-  const [news, setNews] = useState([] as PeaceOfNews[]);
+const [news, setNews] = useState([] as PeaceOfNews[]);
   const sortNews = (news: PeaceOfNews[]) => {
     return news.sort((a, b) => a.createdAt - b.createdAt)
   }
@@ -34,6 +34,7 @@ export function News(props: NewsProps) {
         return <li key={peaceOfNews.id}>
           <h2>{peaceOfNews.title}</h2>
           <p>{peaceOfNews.description}</p>
+          <h4>Дата создания {Intl.DateTimeFormat('ru-RU').format(peaceOfNews.createdAt)}</h4>
           <hr/>
         </li>
       })}
