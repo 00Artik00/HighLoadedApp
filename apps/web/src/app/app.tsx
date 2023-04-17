@@ -5,6 +5,7 @@ import { Route, Link } from 'react-router-dom';
 import News from './news/news';
 import CreateNews from './create-news/create-news';
 
+
 export function App() {
   return (
     <>
@@ -25,6 +26,7 @@ export function App() {
           <li>
             <Link to="/create">Добавить новость</Link>
           </li>
+          
         </ul>
       </div>
       <Route
@@ -48,6 +50,7 @@ export function App() {
           <CreateNews />
         )}
       />
+      
       {/* END: routes */}
     </>
   );

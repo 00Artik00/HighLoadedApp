@@ -7,7 +7,8 @@ export interface PeaceOfNews {
   id: number,
   title: string,
   description: string,
-  createdAt: number
+  createdAt: number,
+  author: string
 }
 
 export function News(props: NewsProps) {

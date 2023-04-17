@@ -9,9 +9,8 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
-import mongoose from 'mongoose';
-// import { MongoClient } from 'mongodb';
-// MongoClient.connect('mongodb://localhost:27017')
+
+
 
 
 
@@ -29,4 +28,4 @@ async function bootstrap() {
 }
 
 bootstrap();
-mongoose.connect('mongodb://127.0.0.1:27017/news-data');
+
