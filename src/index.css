@@ -1,0 +1,7 @@
+::root {
+  --main: red;
+}
+
+.test {
+  background-color: var(--main);
+}
